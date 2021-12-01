@@ -1,0 +1,65 @@
+.content-wrapper {
+    margin: 0 auto;
+    background: #2f2c2c;
+    text-align: center;
+    transition: 0.1s;
+    max-width: 100%;
+
+}
+.content-wrapper.active {
+    background: white;
+    transition: 0.1s;
+    color: black;
+}
+.success-form {
+    padding: 40px;
+    background: transparent;
+    font-size: 50px;
+    color: white;
+    display: none;
+    filter: drop-shadow(1px 1px 10px black);
+    top: 10%;
+}
+.cancel-success {
+    transition: 0.4s;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    opacity: 1;
+    top: 39%;
+    cursor: pointer;
+    left: 84%;
+
+    filter: drop-shadow(1px 1px 10px black);
+}
+.cancel-success:hover {
+    box-shadow: 0 0 14px cyan;
+    border-radius: 6px;
+
+    transition: 0.5s;
+    color: cyan;
+    filter: blur(1px);
+
+}
+
+.cancel-success:before, .cancel-success:after {
+    position: absolute;
+    left: 13px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #f6f6f6;
+    top: -2px;
+}
+.cancel-success:hover {
+    text-shadow: 1px 1px 10px cyan;
+}
+.cancel-success:before {
+    transform: rotate(45deg);
+}
+.cancel-success:after {
+    transform: rotate(-45deg);
+}
+.success-form.show-message {
+    display: block;
+}

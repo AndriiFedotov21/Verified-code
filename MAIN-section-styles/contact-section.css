@@ -1,0 +1,119 @@
+.contact-section {
+
+}
+.name-input,.message-input,.number-name-input {
+    display: block;
+    margin: 15px auto;
+    background: #2f2c2c;
+    color: cyan;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    width: 30%;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 25px white;
+
+}
+.message-input::placeholder {
+    color: black;
+    text-shadow: 0 0 15px white;
+}
+.name-input::placeholder {
+    color: black;
+    text-shadow: 0 0 15px white;
+}
+.number-name-input::placeholder {
+    color: black;
+    text-shadow: 0 0 15px white;
+}
+.message-input {
+    min-height: 220px;
+    max-height: 220px;
+    resize: none;
+    padding: 85px 9px;
+
+}
+.button-for-contact {
+
+    border-radius: 10px;
+    text-decoration: none;
+    border: 0;
+    margin: 10px;
+    padding: 12px;
+    background: #2f2c2c;
+    box-shadow: 0 0 15px white;
+    color: black;
+    z-index: 9999;
+    font-size: 24px;
+    transition: 0.5s;
+    text-shadow: 0 0 15px white;
+    font-family: 'Bebas Neue', cursive;
+}
+.button-for-contact:hover {
+
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+
+
+    text-shadow: 0 0 15px cyan;
+    transition: 0.5s;
+}
+
+.name-input.change-color-form {
+    background: white;
+    text-shadow: 0 0 15px cyan;
+
+    box-shadow: 0 0 20px cyan;
+}
+.message-input.change-color-form {
+    background: white;
+    text-shadow: 0 0 15px cyan;
+    box-shadow: 0 0 20px cyan;
+
+}
+
+.number-name-input.change-color-form {
+    background: white;
+    text-shadow: 0 0 15px cyan;
+    box-shadow: 0 0 20px cyan;
+
+}
+
+.button-for-contact.change-color-form {
+    background: white;
+
+    text-shadow: 0 0 15px cyan;
+    box-shadow: 0 0 20px cyan;
+}
+.holder-for-button-contacts {
+    position: relative;
+    max-width: 150px;
+    margin: 0 auto;
+
+}
+.hidden-text-button-contacts {
+    position: absolute;
+    opacity: 0;
+    right: 100%;
+    left: -100%;
+    top: 40%;
+    color: white;
+    transition: 0.5s;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1px;
+    text-shadow: 0 0 0 cyan;
+
+}
+.holder-for-button-contacts:hover .hidden-text-button-contacts {
+    transition: 0.5s;
+    opacity: 1;
+    right: -105%;
+    color: white;
+    z-index: 9999;
+    top: 270%;
+
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
